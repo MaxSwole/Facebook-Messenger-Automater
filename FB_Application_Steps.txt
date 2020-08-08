@@ -1,0 +1,19 @@
+1) Create/Choose Google Calendar for your Client Messaging List.
+
+2) Create Google Sheet from Template shared 
+https://docs.google.com/spreadsheets/d/1oH6ojiDxRbdi6TJ9DjFeFO0xjRa3gWDlEkRoMhSCw30/edit?usp=sharing
+	A) Save a copy to your personal Google account/Drive
+	B) Copy Google Calendar ID (calendar settings) into Script
+	C) Enter in Name of Client THE DAY THEY PURCHASE to begin process.
+	C) Enter in date day before they start program. 
+
+3) Download FB Application and save to desktop/applications
+
+4) Go to https://developers.google.com/calendar/quickstart/go and enable/download API.
+	A) Download .json file and drag into FB Application folder.
+
+5) Open FB Application
+	A) Log into FB with email/phone and password.
+	B) Copy Google Calendar ID into field.
+
+6) Click "Send Messages"
