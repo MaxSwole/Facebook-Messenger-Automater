@@ -56,7 +56,6 @@ def raise_frame(frame):
 
 def calendarEvents():
 
-    ##try:
         global client
         global username
         global password
@@ -64,9 +63,9 @@ def calendarEvents():
         print(password)
         print(calendarID)
 
-        client = Client(username, password) #, session_cookies=cookies)
-        #with open('session.json', 'w') as f:
-            #json.dump(client.getSession(), f)
+        client = Client(username, password , session_cookies=cookies)
+        with open('session.json', 'w') as f:
+            json.dump(client.getSession(), f)
 
         creds = None
         # The file token.pickle stores the user's access and refresh tokens, and is
@@ -118,11 +117,7 @@ def calendarEvents():
                                          'Messages Sent Successfully. Press "OK" to close the program. Thank you!')
             if msgBox == 'ok':
                 root.destroy()
-    ##except:
-       ##msgBox = messagebox.showinfo('Confirmation', 'There was an error sending messages. Contact support at '
-                                            ##'maxwellkappel@gmail.com\nSorry about that! The program will now close.')
-       ##if msgBox == 'ok':
-            ##root.destroy()
+
 
 root = Tk()
 root.resizable(False, False)
